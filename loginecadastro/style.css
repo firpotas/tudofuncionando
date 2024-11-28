@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+@font-face {
+    font-family: alyssum;
+    src: url(../fontes/Alyssum-Sans.woff);
+}
+
+@font-face {
+    font-family: ahsing;
+    src: url(../fontes/Ahsing-Regular.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: neue;
+    src: url(../fontes/NeueMachina-Ultrabold.otf);
+}
+
+:root {
+    --bg-color: #CFE0C3;
+    --bg2-color: #0B2027;
+    --letra: #fff;
+    --botao: #344F51;
+    --fundinho:#435459;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg2-color);
+}
+
+.login-container {
+    width: 500px; 
+    padding: 40px; 
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 12px;
+    background-color: var(--fundinho);
+    color: var(--letra);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.login-container h2 {
+    font-family: ahsing;
+    font-size: 32px;
+    color: var(--letra);
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px; 
+    transform: translateY(-50%);
+    width: 30px; 
+    height: 25px;
+}
+
+input::placeholder {
+    color: var(--letra);  
+    text-align: left;   
+}
+
+input {
+    width: 100%;
+    padding: 14px 14px 14px 45px; 
+    margin: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-family: alyssum;
+    background-color: var(--fundinho);
+    border-bottom: solid #fff 1px ;
+}
+
+input:focus {
+    outline: none; 
+    background-color: var(--fundinho); 
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background-color: var(--bg2-color);
+    color: var(--letra);
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: alyssum;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform: scale(1.05);
+    background-color: var(--bg-color);
+    color: var(--botao);
+}
+
+a {
+    text-decoration: none;
+    color: var(--letra);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-container p {
+    margin-top: 40px; }
+
+.cd{
+        font-family: ;
+}

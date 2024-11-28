@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --bg-color: #CFE0C3;
+    --bg2-color: #0B2027;
+    --letra: #fff;
+    --botao: #344F51;
+    --fundinho: #435459;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg2-color);
+}
+.login-container {
+    width: 600px; /* Aumentei a largura */
+    padding: 40px; /* Ajustei o espaçamento interno */
+    text-align: center;
+    background-color: var(--fundinho);
+    color: var(--letra);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.login-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--letra);
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.input-container {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--fundinho);
+    color: var(--letra);
+    border-bottom: 1px solid var(--letra);
+}
+
+input::placeholder {
+    color: var(--letra);
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--bg2-color);
+    color: var(--letra);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--bg-color);
+    color: var(--botao);
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: var(--letra);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}

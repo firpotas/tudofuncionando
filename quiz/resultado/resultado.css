@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root{
+    --bg-color: #CFE0C3;
+    --bg2-color: #0B2027;
+    --letra: #fff;
+    --botao: #344F51;
+ }
+
+ @font-face {
+    font-family: alyssum;
+    src: url(../../fontes/Alyssum-Sans.woff);
+  }
+
+  @font-face {
+    font-family: ahsing;
+    src: url(../../fontes/Ahsing-Regular.otf);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: neue;
+    src: url(../../fontes/NeueMachina-Ultrabold.otf);
+  }
+
+ body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    gap: 12px;
+}
+
+.user p {
+    color: white;
+    font-family: alyssum;
+}
+
+.user button {
+    border: 1px solid #538E96;
+    padding: 4px 20px;
+    border-radius: 12px;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: alyssum;
+    cursor: pointer;
+}
+
+.user button:hover {
+    background-color: #538E96;
+    color: black;
+    transform: scaleX(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+.fim {
+    background-color: var(--bg2-color);
+    color: white;
+    padding: 100px;
+    border-radius: 36px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+}
+
+.fim h1 {
+    position: relative;
+    top: -50px;
+    margin-top: 0;
+    font-size: 45px;
+    font-family: ahsing;
+}
+
+.fim p {
+    font-size: 18px;
+    font-family: alyssum;
+}
+
+.rcm, .sr{
+    background-color: var(--botao);
+    color: var(--letra);
+    text-decoration: none;
+    padding: 15px 40px;
+    margin: 0px 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 150px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: alyssum;
+}
+
+.botoes{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rcm:hover, .sr:hover{
+    transition: transform 0.3s ease-in-out , background-color 0.3s ease-in-out;
+    transform: scale(1.3);
+    background-color: var(--bg-color);
+    color: var(--botao);
+}
+

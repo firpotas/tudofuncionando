@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root{
+    --bg-color: #CFE0C3;
+    --bg2-color: #0B2027;
+    --letra: #fff;
+    --botao: #344F51;
+}
+
+@font-face {
+    font-family: alyssum;
+    src: url(../../fontes/Alyssum-Sans.woff);
+  }
+
+  @font-face {
+    font-family: ahsing;
+    src: url(../../fontes/Ahsing-Regular.otf);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: neue;
+    src: url(../../fontes/NeueMachina-Ultrabold.otf);
+  }
+
+
+body {
+    font-family: alyssum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+main {
+    display: flex;
+}
+
+
+p1{
+    color: #fff;
+    font-family: alyssum;
+    font-size: 25px;
+    background-color:#344F51;
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+p {
+    color: white;
+    background-color: #0B2027;
+    padding: 15px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-right: 16px;
+}
+
+.container {
+    background-color: #0B2027;
+    padding: 40px;
+    max-width: 900px;
+    border-radius: 50px;
+}
+
+.emcima h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: alyssum;
+}
+
+.alternativas form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-family: alyssum
+}
+
+.alternativas label {
+    width: 800px;
+    display: block;
+    padding: 12px;
+    background: #344F51;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    box-shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: alyssum;
+}
+
+.alternativas label:has(input:checked) {
+    outline: 3px solid white;
+
+    & span {
+        background: rgb(0, 61, 176);
+        color: rgb(255, 255, 255);
+    }
+}
+
+.alternativas div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: alyssum;
+    font-size: 15px;
+}
+
+.alternativas div span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #538E96;
+    border-radius: 12px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: alyssum;
+}
+
+.alternativas button {
+    padding: 16px;
+    border-radius: 20px;
+    border: none;
+    background: #344F51;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+
+.alternativas button:hover {
+    background: #538E96;
+    cursor: pointer;
+}
+
+.alternativas input {
+    display: none;
+} 
+
+
+.alternativas button {
+    font-size: 22px;
+    font-family: alyssum;
+}
+
+#correta {
+    background-color: lightgreen;
+}
+
+#errada {
+    background-color: lightcoral;
+}
+
+#errada span{
+    background-color: red;
+}
+
+#correta span{
+    background: green;
+}

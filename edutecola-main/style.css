@@ -1,0 +1,639 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: alyssum;
+    src: url(./fontes/Alyssum-Sans.woff);
+  }
+
+  @font-face {
+    font-family: ahsing;
+    src: url(./fontes/Ahsing-Regular.otf);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: neue;
+    src: url(./fontes/NeueMachina-Ultrabold.otf);
+  }
+
+header{
+    background-color:#CFE0C3;    
+    height: 75px;
+}
+
+main{
+    background-color: #0B2027;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+a:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.nav-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px 100px;
+    padding: 16px 100px 16px 23px;
+    
+}
+
+.morbus-cab{
+    margin: -10px;
+}
+
+.caixa-conteudo {
+    position: absolute;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+    gap: 6px;
+    left: 320px;
+    top: 100px;
+
+}
+
+.caixa-conteudo button {
+    border: none;
+    background-color: #0B2027;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 16px;
+    font-family: alyssum;
+    width: 100%;
+}
+
+.caixa-conteudo button:hover {
+    background-color: #538E96;
+    transition: 0.6s;
+    cursor: pointer;
+    padding: 22px 10px;
+}
+
+.nav-cabecalho a{
+    font-size: 25px;
+   font-family: alyssum;
+}
+
+.morbus-cab a{
+    font-family:ahsing;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.morbus:hover,
+.nav-cabecalho div:hover {
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.03);
+}
+
+
+
+.titulo-texto{
+    padding: 150px 0px 40px 100px;
+    font-family: ahsing;
+}
+
+.p1 h1{
+    font-size: 70px;
+}
+
+.p1{
+    display: flex;
+    height: 100svh;
+    
+}
+
+.geral img{
+    display: flex;
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    right: 90px;
+    top: 150px;
+}
+
+.titulo-morbus{
+    font-size: 50px;
+    color: #538E96;
+}
+
+.p1 p{
+    color: #fff;
+    width: 360px;
+    height: 210px;
+    font-size: 28px;
+    font-family: neue;
+}
+
+
+.botao-pergunta{
+    background-color: #CFE0C3;
+    border-radius: 40px;
+    width: 507px;
+    height: 76px;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-family: alyssum;
+}
+
+.botao-pergunta:hover{
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.03);
+}
+
+#pergunta-usuario::placeholder{
+    font-size: 20px;
+    color: black;
+}
+
+.p2,
+.p3,
+.p4{
+    height: 100svh;
+}
+
+.respiratorio,
+.digestorio{
+    color: #538E96;
+    text-align: center;
+    font-size: 60px;
+    font-family: alyssum;
+}
+
+.botao-corona a, .botao-vsr a, .botao-influenza a,
+.botao-arbovirus a, .botao-herpesvirus a, .botao-enterovirus a{
+    font-family: neue;
+    color: #0B2027;
+}
+
+.geral-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.geral-2 img{
+    margin-left: -10px;
+    height: 500px;
+    width: 450px;
+}
+
+.geral-4 #herpebolinha {
+    height: 450px;
+    width: 425px;
+}
+
+
+.geral-2 button{
+    background-color: #CFE0C3;
+    width: 350px;
+    height: 242px;
+    border-radius: 40px;
+}
+
+.geral-4 img{
+    margin-left: -10px;
+    height: 450px;
+    width: 400px;
+}
+
+.geral-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.geral-3 #centrovirus {
+    height: 500px;
+    width: 500px;
+    margin-block: auto;
+}
+
+.geral-3 h2{
+    color: #CFE0C3;
+    font-size: 40px;
+    text-align: center;
+}
+
+.geral-3 p{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.textos-cima,
+.textos-baixo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+
+.material,
+.capsideo,
+.lipidio,
+.envelope{
+    width: 432px;
+    height: 440px;
+}
+
+.material h2,
+.capsideo h2,
+.lipidio h2,
+.envelope h2{
+    font-family: alyssum;
+    font-size: 35px;
+}
+
+.material p,
+.capsideo p,
+.lipidio p,
+.envelope p{
+    font-family: neue;
+    font-size: 20px;
+}
+
+.material, .capsideo{
+    margin-top: 80px;
+}
+
+.geral-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.geral-4 button{
+    background-color: #CFE0C3;
+    width: 350px;
+    height: 242px;
+    border-radius: 40px;
+}
+
+.p4 > h1 {
+    margin-bottom: 50px;
+}
+
+
+.p5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100svh;
+}
+
+
+
+.p5 img{
+    display: flex;
+    justify-content: flex-start;
+    height: 700px;
+}
+
+
+.p5 .geral-5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100svh;
+}
+
+.p5 button{
+    background-color: #538E96;
+    color: #0B2027;
+    border: none;
+    border-radius: 60px;
+    width: 270px;
+    height: 69px;
+    font-size: 25px;
+    font-family: neue;
+}
+
+.p5 h2{
+    font-family: alyssum;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.cv,
+.sp,
+.se{
+    padding: 50px 40px;
+}
+
+.cv button,
+.sp button,
+.se button {
+    margin-right: 10px;
+}
+
+.p6{
+    background-color: #CFE0C3;
+    height: 100svh;
+    display: flex;
+}
+
+.p6 button{
+    background-color: #538E96;
+    color: black;
+    border: none;
+    border-radius: 60px;
+    width: 379px;
+    height: 131px;
+    font-size: 30px;  
+}
+
+.p6 button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.06);
+}
+
+.botao-atividade,
+.botao-curiosidade{
+    flex-direction: column;
+    margin: 30px 350px 180px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.perninha img{
+    display: flex;
+    position: absolute;
+    right: 200px;
+    width: 800px;
+    height: 800px;
+    margin-top: 30px;
+}
+
+.morbus-p6{
+    padding:  80px 60px;
+    font-family: ahsing;
+    font-weight: 100;
+}
+
+.morbus-p6 a{
+    font-size: 50px;
+    color: #0B2027;
+}
+
+.botao-atividade button,
+ .botao-curiosidade button{
+    font-family: alyssum;
+    color: #0B2027;
+}
+.p7{
+    background-color: #538E96;
+    height: 100svh;
+    padding: -40px;
+}
+
+.morbus-p7{
+    padding:  80px 60px;
+    font-family: ahsing;
+    font-weight: 800;
+}
+
+.morbus-p7 a{
+    font-size: 50px;
+    color: #0B2027;
+}
+
+
+.geral-7 h2{
+    color: #CFE0C3;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    font-family: alyssum;
+}
+
+.geral-7 h3{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 70px;
+}
+
+.geral-7 p{
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    font-size: 50px;
+}
+
+.geral-7 img{
+    display: flex;
+    justify-content: center;
+}
+
+.p8{
+    color: #fff;
+    height: 100svh;
+}
+
+.p8 h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 50px;
+    font-family: alyssum;
+}
+
+.p8 h2{
+    font-family: alyssum;
+    font-size: 35px;
+}
+
+.geral-8{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    gap: 400px;
+    margin-top: 50px;
+}
+
+.artista-1 a,
+.artista-2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.geral-8 img{
+    height: 80px;
+    width: 80px;
+}
+
+.telefone {
+    margin-top: 20px;
+}
+
+
+.geral-7 h2 {
+    text-transform: uppercase;
+}
+
+.geral-7 .centro {
+    padding-top: 10px;
+    margin-inline: auto;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: fit-content;
+    gap: 40px;
+    font-family: alyssum;
+}
+
+.centro h3 {
+    font-size: 50px;
+}
+
+.centro p{
+    font-size: 20px;
+    color: #0B2027;
+}
+
+.midias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.midias a img {
+    width: 80px;
+    height: 80px;
+}
+
+.imgs {
+    cursor: pointer;
+    display: flex;
+}
+
+.midiascredito {
+    display: flex;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.p2 .texto-virus  {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 300px;
+    font-size: 30px;
+    margin-top: 120px;
+    text-align: center;
+    font-family: neue;
+}
+
+.p4 .texto-virus  {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 300px;
+    font-size: 30px;
+    margin-top: 120px;
+    text-align: center;
+    font-family: neue;
+}
+
+.cabecalho-textos-virus {
+    display: flex;
+    justify-content: center;
+}
+
+
+.cabecalho-textos-virus img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 40px;
+}
+
+.cabecalho-textos-virus img:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+}
+
+.geral-2 button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+}
+
+.geral-4 button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+}
+
+.geral-5 button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.popup,
+.popup1, .popup2, .popup3, .popup4, .popup5  {
+    display: none;
+    position: absolute;
+    width: 200px;
+    color: black;
+    left: 500px;
+    margin-bottom: 600px;
+    z-index: 999;
+    border: 1px solid #538E96;
+    padding: 20px;
+    background-color: #CFE0C3;
+    border-radius: 16px;
+}
+
+.popup h3,.popup1 h3, .popup2 h3, .popup3 h3, .popup4 h3, .popup5 h3 {
+    display: flex;
+    justify-content: center;
+    font-family: alyssum;
+    font-size: 20px;
+    color: #0B2027;
+}
+
+.popup p, .popup1 p, .popup2 p , .popup3 p, .popup4 p, .popup5 p{
+    text-align: center;
+    font-family: neue;
+    font-size: 15px;
+    color: #0B2027;
+}
+
+.paravermais {
+    display: none;
+    color: white;
+    position: absolute;
+    left: 250px;
+    margin-bottom: 800px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
