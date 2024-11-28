@@ -16,7 +16,7 @@ async function finalizar() {
 
     // Enviar os pontos ao backend
     if (token) {
-        const response = await fetch("http://localhost:3000/update-points", {
+        const response = await fetch("https://morbusbackend.vercel.app/update-points", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -43,7 +43,7 @@ async function carregarRanking() {
         
 
         console.log("carregarRanking chamada")
-        const response = await fetch("http://localhost:3000/ranking");
+        const response = await fetch("https://morbusbackend.vercel.app/ranking");
         const ranking = await response.json();
         console.log("Dados do ranking:", ranking);
 
